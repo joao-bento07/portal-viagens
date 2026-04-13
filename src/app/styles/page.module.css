@@ -1,0 +1,93 @@
+.hero {
+  background: linear-gradient(135deg, #1a6b4a 0%, #2d9e70 60%, #3dbf88 100%);
+  color: #ffffff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.heroInner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.title span {
+  color: #a8e6c1;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #d4f5e3;
+  line-height: 1.6;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.85rem 2rem;
+  background-color: #ffffff;
+  color: #1a6b4a;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.cta:hover {
+  background-color: #e8f5ee;
+  transform: translateY(-2px);
+}
+
+.section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.feature {
+  background-color: #f0faf5;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.featureIcon {
+  font-size: 2rem;
+}
+
+.featureTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a6b4a;
+}
+
+.featureText {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
