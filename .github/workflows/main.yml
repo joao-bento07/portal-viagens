@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Rodar lint
-        run: npx next lint --dir src
+        run: npx eslint src --ext .ts,.tsx --max-warnings=0
 
       - name: Rodar testes
         run: npm run test
