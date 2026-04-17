@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portal de Viagens
 
-## Getting Started
+Aplicacao web desenvolvida com Next.js que simula um portal de viagens, listando destinos turisticos com paginas individuais de detalhes.
 
-First, run the development server:
+## Site publicado
+
+https://portal-viagens-ten.vercel.app/
+
+## Repositorio
+
+https://github.com/joao-bento07/portal-viagens
+
+## Funcionalidades
+
+- Pagina inicial com apresentacao do portal
+- Listagem de 6 destinos turisticos
+- Pagina de detalhes para cada destino (rota dinamica)
+- Menu de navegacao em todas as paginas
+- Estilizacao com CSS Modules
+
+## Tecnologias
+
+- Next.js 16
+- TypeScript
+- CSS Modules
+
+## CI/CD
+
+Pipeline configurada com GitHub Actions (`.github/workflows/main.yml`):
+
+- Instalacao de dependencias (`npm ci`)
+- Lint (`eslint`)
+- Testes (`npm run test`)
+- Build (`npm run build`)
+- Deploy automatico no Vercel a cada push na branch `main`
+
+## Como rodar localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Acesse http://localhost:3000
