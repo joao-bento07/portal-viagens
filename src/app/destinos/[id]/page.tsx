@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Layout from "@/app/components/Layout";
 import destinos from "@/app/data/destinos";
@@ -24,7 +25,7 @@ export default async function DetalheDestinoPage({ params }: Props) {
         </Link>
 
         <div className={styles.imageWrapper}>
-          <img src={destino.imagem} alt={destino.nome} />
+          <Image src={destino.imagem} alt={destino.nome} fill style={{ objectFit: "cover" }} />
         </div>
 
         <h1 className={styles.nome}>{destino.nome}</h1>
